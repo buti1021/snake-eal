@@ -1,0 +1,87 @@
+Index: test.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import json\r\n\r\nnames = [\"Rosa_Parks\",\r\n\"Kleopatra\",\r\n\"Jeanne_dArc\",\r\n\"Marie_Curie\",\r\n\"Angela_Merkel\",\r\n\"Queen_Victoria\",\r\n\"Nellie_Bly\",\r\n\"Amelia_Earhart\",\r\n\"Edith_Stein\",\r\n\"Harriet_Tubman\",\r\n\"Maria_Mitchell\",\r\n\"Michelle_Obama\",\r\n\"Yusra_Mardini\",\r\n\"Virginia_Hall\",\r\n\"Nofretete\",\r\n\"Barack_Obama\",\r\n\"Albert_Einstein\",\r\n\"Andy_Warhol\",\r\n\"Aristoteles\",\r\n\"Charles_Darwin\",\r\n\"Dalai_Lama\",\r\n\"Edward_Jenner\",\r\n\"Galileo_Galilei\",\r\n\"Johannes_Kepler\",\r\n\"Henry_Hudson\",\r\n\"Hippokrates\",\r\n\"Mahatma_Gandhi\",\r\n\"Marco_Polo\",\r\n\"Mark_Twain\",\r\n\"Neil_Armstrong\",\r\n]\r\npassword = \"eal21\"\r\ncommand = []\r\nfor n in names:\r\n    command.append({\r\n        \"username\": n,\r\n        \"password\": password\r\n    })\r\n\r\nprint(json.dumps(command))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/test.py b/test.py
+--- a/test.py	(revision ebefbe4f382adca95cea1000736258bff7a5fb3f)
++++ b/test.py	(date 1620834683287)
+@@ -1,42 +1,40 @@
+ import json
+ 
+-names = ["Rosa_Parks",
+-"Kleopatra",
+-"Jeanne_dArc",
+-"Marie_Curie",
+-"Angela_Merkel",
+-"Queen_Victoria",
+-"Nellie_Bly",
+-"Amelia_Earhart",
+-"Edith_Stein",
+-"Harriet_Tubman",
+-"Maria_Mitchell",
+-"Michelle_Obama",
+-"Yusra_Mardini",
+-"Virginia_Hall",
+-"Nofretete",
+-"Barack_Obama",
+-"Albert_Einstein",
+-"Andy_Warhol",
+-"Aristoteles",
+-"Charles_Darwin",
+-"Dalai_Lama",
+-"Edward_Jenner",
+-"Galileo_Galilei",
+-"Johannes_Kepler",
+-"Henry_Hudson",
+-"Hippokrates",
+-"Mahatma_Gandhi",
+-"Marco_Polo",
+-"Mark_Twain",
+-"Neil_Armstrong",
++names = [
++    "Rosa_Parks",
++    "Kleopatra",
++    "Jeanne_dArc",
++    "Marie_Curie",
++    "Angela_Merkel",
++    "Queen_Victoria",
++    "Nellie_Bly",
++    "Amelia_Earhart",
++    "Edith_Stein",
++    "Harriet_Tubman",
++    "Maria_Mitchell",
++    "Michelle_Obama",
++    "Yusra_Mardini",
++    "Virginia_Hall",
++    "Nofretete",
++    "Barack_Obama",
++    "Albert_Einstein",
++    "Andy_Warhol",
++    "Aristoteles",
++    "Charles_Darwin",
++    "Dalai_Lama",
++    "Edward_Jenner",
++    "Galileo_Galilei",
++    "Johannes_Kepler",
++    "Henry_Hudson",
++    "Hippokrates",
++    "Mahatma_Gandhi",
++    "Marco_Polo",
++    "Mark_Twain",
++    "Neil_Armstrong",
+ ]
+ password = "eal21"
+ command = []
+ for n in names:
+-    command.append({
+-        "username": n,
+-        "password": password
+-    })
++    command.append({"username": n, "password": password})
+ 
+-print(json.dumps(command))
+\ No newline at end of file
++print(json.dumps(command))

@@ -17,7 +17,7 @@ pygame.display.update()  # Sonst ändert sich nix
 pygame.draw.rect(fenster, GRUEN, (20, 0, 20, 20))  # rechts neben das blaue quadrat ein grünes
 pygame.display.update()
 start = time.time()
-pygame.time.Clock().tick(0.5)  # 0.5 FPS => ungefähr zwei Sekunde
+pygame.time.Clock().tick(0.5)  # ähnlich wie sleep nur andere einheite(FPS) 0.5 FPS => ungefähr zwei Sekunde
 end = time.time()
 print(end - start)
 fenster.fill(BLAU)  # alles blau machen

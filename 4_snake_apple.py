@@ -77,9 +77,7 @@ def game_loop():
                     x_change = 0
                     y_change = +BLOCK_GROESSE
         snake_head = Block(snake_head.x + x_change, snake_head.y + y_change)
-        print(apple)
         if snake_head == apple:
-            print(apple)
             apple = Block(
                 x=random.randrange(0, BREITE, BLOCK_GROESSE),
                 y=random.randrange(0, HOEHE, BLOCK_GROESSE),
